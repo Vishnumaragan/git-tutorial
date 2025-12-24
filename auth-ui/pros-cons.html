@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pros & Cons</title>
+  <link rel="stylesheet" href="pros-cons.css" />
+</head>
+<body>
+
+  <!-- Topic Entry Section -->
+  <div class="topic-section" id="topicSection">
+    <h1>What's your decision topic?</h1>
+    <input type="text" id="topicInput" placeholder="e.g Should I learn React?" />
+    <button onclick="submitTopic()">Start</button>
+  </div>
+
+  <!-- Main App Section -->
+  <div id="appContent">
+    <h2 class="topic-title" id="topicTitle"></h2>
+
+    <div class="input-section">
+      <input type="text" id="itemInput" placeholder="Enter a point" />
+      <button onclick="addItem('pros')">Add To Pros</button>
+      <button onclick="addItem('cons')">Add To Cons</button>
+    </div>
+
+    <div class="list-container">
+      <div class="list">
+        <h2>Pros</h2>
+        <ul id="prosList"></ul>
+      </div>
+
+      <div class="list">
+        <h2>Cons</h2>
+        <ul id="consList"></ul>
+      </div>
+    </div>
+
+    <div class="scoreboard" id="scoreboard">
+      Pros: 0 | Cons: 0 <br /> Let's Decide
+    </div>
+  </div>
+
+  <script src="pros-cons.js"></script>
+</body>
+</html>
