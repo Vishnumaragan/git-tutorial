@@ -9,7 +9,7 @@
 body {
     height: 100vh;
     overflow: hidden;
-    background-color: #bbc6fa;
+    /* background-color: #bbc6fa; */
     background-image: url('background.avif');
     background-size: cover;
     background-position: center;
