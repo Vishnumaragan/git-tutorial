@@ -75,3 +75,13 @@ const addBtn = document.querySelector("#add-btn");
         displayCount(taskCount);
         newTaskInput.value = "";
       };
+
+      // For adding task even if i press enter
+      addBtn.addEventListener("click", addTask);
+
+newTaskInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+     e.preventDefault();
+    addTask();
+  }
+});

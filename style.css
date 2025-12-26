@@ -9,7 +9,6 @@
 body {
     height: 100vh;
     overflow: hidden;
-    /* background-color: #bbc6fa; */
     background-image: url('background.avif');
     background-size: cover;
     background-position: center;
@@ -42,8 +41,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
-
     
 }
 
